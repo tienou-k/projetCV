@@ -12,6 +12,13 @@ Mettre en pratique les compétences acquises en HTML, CSS pour réaliser une pag
 Le projet permet également de réfléchir au design du site, à l'indentation et aux commentaires du code. 
 Comme editeur, il faut utiliser Visual studio Code.
 
+Critères de performance
+Le site HTML/CSS doit passer le validateur W3C (https://validator.w3.org/ )
+Le code est correctement indenté et commenté
+Le site répond à la maquette
+Le rendu final devra correspondre et être le plus fidèle possible à l'original
+
+
 Ressources
 Lien des modèles : 
 https://drive.google.com/drive/folders/1NVwLdGM60kM1KV6gFYMHrY9A1QUQ7VZx?usp=sharing 
