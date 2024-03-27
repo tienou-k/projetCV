@@ -291,6 +291,25 @@ i {
   header {
     height: auto;
   }
+
+  /* --------grid global----------- */
+.grid-parcours,
+.grid-exp {
+  padding: 5px 2rem;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr 1fr ;
+  box-sizing: border-box;
+}
+.partie1,
+.partie2 {
+  width: 3px;
+  border-radius: 5px;
+  background: var(--gradient);
+}
+/* --------------------css partie experience-------------------- */
+
   .grid-interet {
     padding-top: 0;
     display: grid;
@@ -301,22 +320,15 @@ i {
   .grid-interet span a {
     opacity: 0;
   }
-  j .menu {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #244d61;
-  }
-
-  #click:checked ~ ul {
-    left: 0%;
-    transition: all 0.3s ease;
-  }
   .images {
     width: 100%;
     margin: auto;
   }
   .main {
     margin-top: 0;
+    text-align: center;
+  }
+  p{
+    text-align: justify;
   }
 }
