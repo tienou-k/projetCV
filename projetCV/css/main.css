@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -21,7 +20,12 @@ body {
   font-family: "Outfit", sans-serif;
   overflow-x: hidden;
 }
-
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  cursor: default;
+}
 /*---------------------------------element--------------------------- */
 .container {
   padding: 0 8.4rem;
@@ -31,12 +35,13 @@ body {
 }
 
 /*nav */
-header {
-  background: var(--gradient);
-  position: sticky;
+/* header {
+  background-image: url("../images/header.png");
+  background-repeat: no-repeat;
+  position: relative;
   top: 0;
   width: 100%;
-}
+} */
 
 .page-header {
   justify-content: space-between;
@@ -83,7 +88,8 @@ header {
   position: relative;
   z-index: -1;
 }
-
+#header {
+}
 /*  -----------------css section parcours -------------------- */
 .titre-parcours {
   width: 100%;
@@ -98,7 +104,7 @@ h3 {
 }
 .grid-parcours,
 .grid-exp {
-  padding: 10px 3rem;
+  padding: 15px 3rem;
   width: 100%;
   display: grid;
   grid:
@@ -107,12 +113,11 @@ h3 {
     "partie-1 partie-7 partie-3 partie-8"
     "partie-1 partie-7 partie-3 partie-8";
   gap: 10px;
-  grid-template-columns: 15px auto 15px;
+  grid-template-columns: 15px auto 15px auto;
 }
 .partie1,
 .partie2 {
   width: 3px;
-  border: 1px solid var (--gradient);
   border-radius: 15px;
   background: var(--gradient);
 }
@@ -179,14 +184,14 @@ li {
 }
 .bar {
   position: relative;
-  border: 1px solid #0d96e0;
+  border: 1px solid #0d96e069;
   border-radius: 20px;
 }
 .bar div {
   position: relative;
   width: 60px;
   height: 3px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   background: var(--gradient);
 }
 
@@ -228,6 +233,14 @@ i {
   .container {
     padding: 0 1.6rem;
   }
+  .grid-parcours,
+  .grid-exp {
+    padding: 15px 2rem;
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr;
+  }
   .grid-interet {
     display: grid;
   }
@@ -245,19 +258,16 @@ i {
   header {
     height: auto;
   }
-
-  ul {
-    background: #fff;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    top: 3.4rem;
-    left: -100%;
-    z-index: 111111;
+  .grid-interet {
+    padding-top: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    font-size: small;
   }
+  .grid-interet span a {
+    opacity: 0;
+  }j
   .menu {
     display: block;
     font-size: 1.5rem;
