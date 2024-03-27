@@ -35,14 +35,17 @@ a {
 }
 
 /*nav */
-/* header {
-  background-image: url("../images/header.png");
-  background-repeat: no-repeat;
-  position: relative;
-  top: 0;
-  width: 100%;
-} */
-
+.info {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 15px;
+}
+.ok {
+  color: #6606d3;
+}
+.info span {
+  font-weight: 900;
+}
 .page-header {
   justify-content: space-between;
   padding: 1rem 0;
@@ -169,11 +172,6 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
-li {
-  list-style-type: none;
-  display: inline;
-  margin-right: 50px;
-}
 
 /* skill */
 .details {
@@ -211,7 +209,7 @@ li {
 .int {
   height: 50px;
 }
-i {
+.grid-interet i {
   width: 25px;
   height: 25px;
   border: 1px solid var(--gradient);
@@ -258,6 +256,7 @@ i {
   header {
     height: auto;
   }
+
   .grid-interet {
     padding-top: 0;
     display: grid;
@@ -293,22 +292,22 @@ i {
   }
 
   /* --------grid global----------- */
-.grid-parcours,
-.grid-exp {
-  padding: 5px 2rem;
-  width: 100%;
-  display: grid;
-  gap: 10px;
-  grid-template-rows: 1fr 1fr ;
-  box-sizing: border-box;
-}
-.partie1,
-.partie2 {
-  width: 3px;
-  border-radius: 5px;
-  background: var(--gradient);
-}
-/* --------------------css partie experience-------------------- */
+  .grid-parcours,
+  .grid-exp {
+    padding: 5px 2rem;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+  }
+  .partie1,
+  .partie2 {
+    width: 3px;
+    border-radius: 5px;
+    background: var(--gradient);
+  }
+  /* --------------------css partie experience-------------------- */
 
   .grid-interet {
     padding-top: 0;
@@ -328,7 +327,7 @@ i {
     margin-top: 0;
     text-align: center;
   }
-  p{
+  p {
     text-align: justify;
   }
 }
