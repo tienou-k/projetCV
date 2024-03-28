@@ -204,24 +204,28 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: end;
 }
-.int h3 {
+
+.interet h3 {
   text-align: left;
   margin-left: 15px;
   margin-top: 13px;
 }
 
-.int {
+.interet {
   height: 50px;
 }
-.grid-interet i {
-  width: 25px;
-  height: 25px;
+.int-sport, .int-music,.int-code {
+  width: 35px;
+  height: 35px;
   border: 1px solid var(--gradient);
   border-radius: 50%;
   background: var(--gradient);
   color: #fff;
   text-align: center;
   margin-top: 5px;
+}
+.int-sport span{
+  background: url("./images/desktop.svg");
 }
 
 /* --------------media queries-------------------- */
