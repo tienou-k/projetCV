@@ -105,8 +105,8 @@ h3 {
 .partie1,
 .partie2 {
   margin-top: 5px;
-  width: 3px;
-  height: 100px;
+  width: px;
+  height: 5px;
   border-radius: 15px;
   background: var(--gradient);
 }
