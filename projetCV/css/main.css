@@ -214,7 +214,9 @@ h3 {
 .interet {
   height: 50px;
 }
-.int-sport, .int-music,.int-code {
+.int-sport,
+.int-music,
+.int-code {
   width: 35px;
   height: 35px;
   border: 1px solid var(--gradient);
@@ -224,15 +226,27 @@ h3 {
   text-align: center;
   margin-top: 5px;
 }
-.int-sport span{
-  background: url("./images/desktop.svg");
-}
 
+span img{
+  filter: brightness(5) invert();
+}
 /* --------------media queries-------------------- */
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 4.4rem;
   }
+  .sp{
+  margin-top: 5px;
+  margin-right: 18px;
+}
+.mu{
+  margin-top: 5px;
+  margin-right: 40px;
+}
+.cd{
+  margin-top: 5px;
+  margin-right: 5px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -258,6 +272,18 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
+  .sp{
+  margin-top: 5px;
+  margin-right: 19px;
+}
+.mu{
+  margin-top: 5px;
+  margin-right: 40px;
+}
+.cd{
+  margin-top: 5px;
+  margin-right: 12px;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -282,10 +308,6 @@ h3 {
     color: #244d61;
   }
 
-  #click:checked ~ ul {
-    left: 0%;
-    transition: all 0.3s ease;
-  }
   .images {
     width: 100%;
     margin: auto;
@@ -293,12 +315,38 @@ h3 {
   .main {
     margin-top: 2rem;
   }
+  .sp{
+  margin-top: 5px;
+  margin-right: 9px;
+}
+.mu{
+  margin-top: 5px;
+  margin-right: 28px;
+}
+.cd{
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.info, .ok{
+  font-size: 10px;
+}
 }
 @media screen and (max-width: 400px) {
   header {
     height: auto;
   }
-
+.sp{
+  margin-top: 5px;
+  margin-right: 9px;
+}
+.mu{
+  margin-top: 5px;
+  margin-right: 30px;
+}
+.cd{
+  margin-top: 5px;
+  margin-right: 5px;
+}
   /* --------grid global----------- */
   .grid-parcours,
   .grid-exp {
