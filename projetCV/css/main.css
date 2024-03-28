@@ -22,7 +22,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-weight: 700;
   cursor: default;
 }
@@ -46,21 +46,6 @@ a {
 .info span {
   font-weight: 900;
 }
-.page-header {
-  justify-content: space-between;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-.logo a {
-  color: white;
-  text-decoration: none;
-}
 
 /* -------------------main-------------------- */
 .main {
@@ -71,12 +56,12 @@ a {
 }
 
 .main h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .main p {
-  line-height: 1.7;
+  line-height: 1.5;
   font-size: 1.15rem;
 }
 
@@ -91,8 +76,7 @@ a {
   position: relative;
   z-index: -1;
 }
-#header {
-}
+
 /*  -----------------css section parcours -------------------- */
 .titre-parcours {
   width: 100%;
@@ -175,8 +159,6 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
-
-/* skill */
 .details {
   width: 100%;
   display: flex;
@@ -202,9 +184,16 @@ h3 {
   border: 1px solid #1f252e;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: end;
+  justify-content: center;
 }
-
+.grid-interet span {
+  display: flex;
+}
+.grid-interet span a {
+  margin-top: 5px;
+  justify-content: space-between;
+  margin-left: 15px;
+}
 .interet h3 {
   text-align: left;
   margin-left: 15px;
@@ -227,26 +216,28 @@ h3 {
   margin-top: 5px;
 }
 
-span img{
+span img {
   filter: brightness(5) invert();
+  margin-left: 5px;
 }
 /* --------------media queries-------------------- */
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 4.4rem;
   }
-  .sp{
-  margin-top: 5px;
-  margin-right: 18px;
-}
-.mu{
-  margin-top: 5px;
-  margin-right: 40px;
-}
-.cd{
-  margin-top: 5px;
-  margin-right: 5px;
-}
+
+  .sp {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .mu {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .cd {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -272,18 +263,18 @@ span img{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
-  .sp{
-  margin-top: 5px;
-  margin-right: 19px;
-}
-.mu{
-  margin-top: 5px;
-  margin-right: 40px;
-}
-.cd{
-  margin-top: 5px;
-  margin-right: 12px;
-}
+  .sp {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .mu {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .cd {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -301,12 +292,6 @@ span img{
   .grid-interet span a {
     opacity: 0;
   }
-  j .menu {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #244d61;
-  }
 
   .images {
     width: 100%;
@@ -315,38 +300,39 @@ span img{
   .main {
     margin-top: 2rem;
   }
-  .sp{
-  margin-top: 5px;
-  margin-right: 9px;
-}
-.mu{
-  margin-top: 5px;
-  margin-right: 28px;
-}
-.cd{
-  margin-top: 5px;
-  margin-right: 5px;
-}
-.info, .ok{
-  font-size: 10px;
-}
+  .sp {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .mu {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .cd {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .info,
+  .ok {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 400px) {
   header {
     height: auto;
   }
-.sp{
-  margin-top: 5px;
-  margin-right: 9px;
-}
-.mu{
-  margin-top: 5px;
-  margin-right: 30px;
-}
-.cd{
-  margin-top: 5px;
-  margin-right: 5px;
-}
+  .sp {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .mu {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .cd {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
   /* --------grid global----------- */
   .grid-parcours,
   .grid-exp {
