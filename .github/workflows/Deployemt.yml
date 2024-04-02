@@ -1,5 +1,5 @@
 # Workflows simple pour déployer du contenu statique sur les pages GitHub
-name: Deploy static content to Pages
+name: Deployer mon Site
 
 on:
   # Runs on pushes targeting the default branch
