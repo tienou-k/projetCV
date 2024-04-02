@@ -1,4 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Workflows simple pour déployer du contenu statique sur les pages GitHub
 name: Deploy static content to Pages
 
 on:
@@ -6,23 +6,23 @@ on:
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Permet d'exécuter ce workflow manuellement à partir de l'onglet Actions
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Définit les permissions du GITHUB_TOKEN pour permettre le déploiement vers les pages GitHub.
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# N'autoriser qu'un seul déploiement simultané, en ignorant les exécutions en file d'attente entre l'exécution en cours et la dernière exécution en file d'attente.
+# Cependant, n'annulez PAS les exécutions en cours car nous voulons permettre à ces déploiements de production de se terminer.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  
   deploy:
     environment:
       name: github-pages
