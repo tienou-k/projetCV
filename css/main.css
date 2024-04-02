@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
+
+/*---------------------------------Genral--------------------------- */
+:root {
+  --gradient: linear-gradient(#6606d3, #a808f1);
+  --brd-color: #6606d3;
+  --nav-text: #120f2d;
+  --prim2: #a808f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  cursor: default;
+}
+/*---------------------------------element--------------------------- */
+.container {
+  padding: 0 8.4rem;
+}
+.img-w {
+  width: 100%;
+}
+
+/*nav */
+.info {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 15px;
+}
+.ok {
+  color: #6606d3;
+}
+.okZ {
+  color: black;
+  font-weight: 600;
+}
+.info span {
+  font-weight: 900;
+}
+
+/* -------------------main-------------------- */
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.main h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main p {
+  line-height: 1.5;
+  font-size: 1.15rem;
+}
+
+.main h3 {
+  font-size: 1.5rem;
+}
+
+.images {
+  width: 100%;
+  margin-left: auto;
+  margin-bottom: 0;
+  position: relative;
+  z-index: -1;
+}
+
+/*  -----------------css section parcours -------------------- */
+.titre-parcours {
+  width: 100%;
+}
+.one {
+  width: 100%;
+  border: 1px solid #1f252e;
+}
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.grid-parcours,
+.grid-exp {
+  padding: 15px 3rem;
+  width: 100%;
+  display: grid;
+  grid:
+    "partie-1 partie-2 partie-3 partie-4"
+    "partie-1 partie-5 partie-3 partie-6"
+    "partie-1 partie-7 partie-3 partie-8"
+    "partie-1 partie-7 partie-3 partie-8";
+  gap: 10px;
+  grid-template-columns: 15px auto 15px auto;
+}
+.partie1,
+.partie2 {
+  margin-top: 5px;
+  width: px;
+  height: 5px;
+  border-radius: 15px;
+  background: var(--gradient);
+}
+
+.partie1 {
+  grid-area: partie-1;
+}
+.partie2 {
+  grid-area: partie-3;
+}
+.grid-parcou-item1 {
+  grid-area: partie-2;
+}
+.grid-parcou-item2 {
+  grid-area: partie-4;
+}
+.grid-parcou-item3 {
+  grid-area: partie-5;
+}
+.grid-parcou-item4 {
+  grid-area: partie-6;
+}
+
+/* --------------------css partie experience-------------------- */
+.grid-exp-item1 {
+  grid-area: partie-2;
+}
+.grid-exp-item2 {
+  grid-area: partie-4;
+}
+.grid-exp-item3 {
+  grid-area: partie-5;
+}
+.grid-exp-item4 {
+  grid-area: partie-6;
+}
+.grid-exp-item5 {
+  grid-area: partie-7;
+}
+.grid-exp-item6 {
+  grid-area: partie-8;
+}
+
+/*------------------------------- compteneces------------------ */
+.grid-liste {
+  padding-top: 15px;
+  margin-left: 45px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar {
+  position: relative;
+  border: 1px solid #696d6e69;
+  border-radius: 20px;
+}
+.bar div {
+  position: relative;
+  width: 50%;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--gradient);
+}
+
+/* -----------------INTERET------------------------------ */
+.grid-interet {
+  width: 100%;
+  border: 1px solid #1f252e;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+.grid-interet span {
+  display: flex;
+}
+.grid-interet span a {
+  margin-top: 5px;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+.interet h3 {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 13px;
+}
+
+.interet {
+  height: 50px;
+}
+.int-sport,
+.int-music,
+.int-code {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--gradient);
+  border-radius: 50%;
+  background: var(--gradient);
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+}
+
+span img {
+  filter: brightness(5) invert();
+  margin-left: 5px;
+}
+/* --------------media queries-------------------- */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 4.4rem;
+  }
+
+  .sp {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .mu {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .cd {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1.6rem;
+  }
+  .grid-parcours,
+  .grid-exp {
+    padding: 15px 2rem;
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid-interet {
+    display: grid;
+  }
+  .grid-liste {
+    padding-top: 15px;
+    margin-left: 45px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .sp {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .mu {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .cd {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: auto;
+  }
+
+  .grid-interet {
+    padding-top: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    font-size: small;
+  }
+  .grid-interet span a {
+    opacity: 0;
+  }
+  .images {
+    width: 100%;
+    margin: auto;
+  }
+  .main {
+    margin-top: 2rem;
+  }
+  .sp {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .mu {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .cd {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .info,
+  .ok {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header {
+    height: auto;
+  }
+
+  .sp {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .mu {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .cd {
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  /* --------grid global----------- */
+  .grid-parcours,
+  .grid-exp {
+    padding: 5px 2rem;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+  }
+  .partie1,
+  .partie2 {
+    width: 3px;
+    border-radius: 5px;
+    background: var(--gradient);
+  }
+  /* --------------------css partie experience-------------------- */
+
+  .grid-interet {
+    padding-top: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    font-size: small;
+  }
+  .grid-interet span a {
+    opacity: 0;
+  }
+  .images {
+    width: 100%;
+    margin: auto;
+  }
+  .main {
+    margin-top: 0;
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+}
